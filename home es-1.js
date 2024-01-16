@@ -13,7 +13,7 @@ saveButton.addEventListener('click', function () {
 });
 resetButton.addEventListener('click', function () {
   console.log('cliccato reset!');
-  textarea.value = '';
+  nome.value = '';
   localStorage.removeItem('nomesalvato');
   alert('memoria eliminata!');
 });
