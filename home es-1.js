@@ -8,18 +8,18 @@ saveButton.addEventListener('click', function () {
   console.log('cliccato salva!');
   const content = nome.value;
   console.log('content', content);
-  localStorage.setItem('elenco', content);
+  localStorage.setItem('nomesalvato', content);
   alert('contenuto salvato!');
 });
 resetButton.addEventListener('click', function () {
   console.log('cliccato reset!');
   textarea.value = '';
-  localStorage.removeItem('elenco');
+  localStorage.removeItem('nomesalvato');
   alert('memoria eliminata!');
 });
-const savedContent = localStorage.getItem('elenco');
+const savedContent = localStorage.getItem('nomesalvato');
 const titolo = function () {
-  const savedContent = localStorage.getItem('elenco');
+  const savedContent = localStorage.getItem('nomesalvato');
 
   paragrafo.value = savedContent;
 };
